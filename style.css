@@ -126,6 +126,7 @@ input{
     }
 
     .resultado{
+        flex-grow: 1;
         height: 100%;
     }
 }
