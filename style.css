@@ -108,7 +108,7 @@ input{
     .juntarNomes, 
     .dividirNumeros {
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
+        grid-template-rows: 0.6fr 1fr;
         flex-grow: 1;
         gap: 2px;
         padding-top: 10px;
