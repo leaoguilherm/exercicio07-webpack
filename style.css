@@ -11,6 +11,16 @@ body {
     justify-content: center;
 }
 
+.main{
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: nowrap;
+}
+
 .juntarNomes, 
 .dividirNumeros {
     background-color: #DFE6ED;
@@ -21,16 +31,6 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 16px;
-}
-
-.main{
-    padding: 20px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    flex-wrap: nowrap;
 }
 
 .resultado{
@@ -98,3 +98,34 @@ input{
 }
 
 
+
+@media screen and (max-width: 1056px) {
+    .main {
+        flex-direction: column;
+        height: 100vh;
+    }
+
+    .juntarNomes, 
+    .dividirNumeros {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        flex-grow: 1;
+        gap: 2px;
+        padding-top: 10px;
+        align-items: start;
+    }
+
+    .conteiner__inputs {
+        margin-top: 0px;
+        flex-grow: 0;
+    }
+
+    .btnJuntarNomes, .btnDividir{
+        padding: 5px;
+        font-size: 20px;
+    }
+
+    .resultado{
+        height: 100%;
+    }
+}
